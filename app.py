@@ -8,6 +8,7 @@ from app.report import generate_vagueness_report
 from openai import OpenAI
 # from config import OPENAI_API_KEY
 
+
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.set_page_config(page_title="AI Resume Analyzer", layout="wide")

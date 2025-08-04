@@ -107,15 +107,15 @@ def create_overall_score_circle(score):
 
 
 # MAIN HEADER
-st.title("🧠 AI Resume Analyzer")
+st.title("AI Resume Analyzer")
 st.markdown("Upload your resume and see how it stacks up for your target role.")
 st.markdown("")
 
-uploaded_file = st.file_uploader("📄 Upload your resume (PDF)", type=["pdf"])
+uploaded_file = st.file_uploader("Upload your resume (PDF)", type=["pdf"])
 
 
 job_title = st.text_area(
-    "🎯 Paste the full job title or description:",
+    "Paste the full job title or description:",
     placeholder="Paste the complete job description here...",
     height=100
 )

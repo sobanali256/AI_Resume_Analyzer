@@ -264,7 +264,7 @@ def parse_resume_analysis(text: str) -> dict:
         return int(match.group(1)) if match else None
 
     total_score = re.search(r"RELEVANCE SCORE:\s*(\d+(?:\.\d+)?)/100", text)
-
+    total_score = extract_score("RELEVANCE SCORE")
     return {
         "total_score": total_score,
         "breakdown": {
